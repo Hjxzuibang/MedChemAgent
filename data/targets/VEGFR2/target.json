@@ -1,0 +1,20 @@
+{
+  "name": "VEGFR2",
+  "pdb_id": "4ASD",
+  "drug": "semaxanib",
+  "ligand_res": "BAX",
+  "chain": "A",
+  "hit_smiles": "Cc1cc(C=C2C(=O)Nc3ccccc23)[nH]c1C",
+  "receptor_pdb": "data/targets/VEGFR2/receptor.pdb",
+  "box_center": [
+    -24.622,
+    -0.388,
+    -10.929
+  ],
+  "box_size": [
+    21.164,
+    16.291,
+    19.618
+  ],
+  "protein_atoms": 2453
+}

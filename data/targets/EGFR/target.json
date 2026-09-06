@@ -1,0 +1,20 @@
+{
+  "name": "EGFR",
+  "pdb_id": "1M17",
+  "drug": "erlotinib",
+  "ligand_res": "AQ4",
+  "chain": "A",
+  "hit_smiles": "COCCOc1cc2ncnc(Nc3cccc(C#C)c3)c2cc1OCCOC",
+  "receptor_pdb": "data/targets/EGFR/receptor.pdb",
+  "box_center": [
+    22.014,
+    0.253,
+    52.794
+  ],
+  "box_size": [
+    23.709,
+    16.0,
+    16.0
+  ],
+  "protein_atoms": 2497
+}

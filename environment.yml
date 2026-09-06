@@ -1,0 +1,19 @@
+# MedChemAgent environment.
+# Create with:  conda env create -f environment.yml
+name: medchem-agent
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.10,<3.13
+  - pip
+  - rdkit
+  - smina                # AutoDock Vina fork (docking engine)
+  - pip:
+      - openai
+      - httpx
+      - rank-bm25
+      - numpy
+      - scipy
+      - pyyaml

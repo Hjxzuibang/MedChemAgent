@@ -1,0 +1,20 @@
+{
+  "name": "CDK2",
+  "pdb_id": "1AQ1",
+  "drug": "olomoucine",
+  "ligand_res": "STU",
+  "chain": "A",
+  "hit_smiles": "CN1C=NC2=C1N=C(N=C2NCC3=CC=CC=C3)NCCO",
+  "receptor_pdb": "data/targets/CDK2/receptor.pdb",
+  "box_center": [
+    0.517,
+    27.062,
+    8.972
+  ],
+  "box_size": [
+    16.765,
+    17.452,
+    16.0
+  ],
+  "protein_atoms": 2230
+}

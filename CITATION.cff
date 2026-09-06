@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Metric alignment in multi-objective hit-to-lead optimization: a closed-loop large language model agent"
+type: software
+license: MIT
+version: 0.1.0
+authors:
+  - given-names: Jiaxin
+    family-names: Hu
+    affiliation: "School of Advanced Interdisciplinary Sciences (SAIS), University of Chinese Academy of Sciences (UCAS), Beijing, China; State Key Laboratory of Organ Regeneration and Reconstruction, Institute of Zoology, Chinese Academy of Sciences, Beijing, China"
+    orcid: "https://orcid.org/0009-0004-2536-7375"
+    email: "hujiaxin21@mails.ucas.ac.cn"
+  - given-names: Limeng
+    family-names: Tian
+    affiliation: "School of Aerospace Engineering, Tsinghua University, Beijing, China"
+    orcid: "https://orcid.org/0009-0001-7596-6892"
+    email: "tlm24@mails.tsinghua.edu.cn"
+  - given-names: Chen
+    family-names: Fang
+    affiliation: "College of Electronic Engineering, National University of Defense Technology, Hefei, 230031, China"
+    orcid: "https://orcid.org/0009-0001-6382-1960"
+    email: "fangchen23@ioz.ac.cn"

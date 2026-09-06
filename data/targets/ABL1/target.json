@@ -1,0 +1,20 @@
+{
+  "name": "ABL1",
+  "pdb_id": "1IEP",
+  "drug": "PP1",
+  "ligand_res": "STI",
+  "chain": "A",
+  "hit_smiles": "CC(C)(C)n1nc(-c2ccc(C)cc2)c2c(N)ncnc21",
+  "receptor_pdb": "data/targets/ABL1/receptor.pdb",
+  "box_center": [
+    15.614,
+    53.38,
+    15.455
+  ],
+  "box_size": [
+    16.664,
+    24.739,
+    21.526
+  ],
+  "protein_atoms": 2229
+}
