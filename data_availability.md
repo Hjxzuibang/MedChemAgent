@@ -2,11 +2,11 @@
 
 ## Targets and receptor structures
 
-The six benchmark targets use co-crystal structures deposited in the Protein
-Data Bank (RCSB). The prepared receptors used for docking are shipped in
-`data/targets/<target>/receptor.pdb`; the raw deposited structures used for
-redocking validation (`scripts/orthogonal_validation.py`, Task B) are in
-`data/pdb/`.
+The eight benchmark/orthogonal-validation targets use co-crystal structures
+deposited in the Protein Data Bank (RCSB). The prepared receptors used for
+docking are shipped in `data/targets/<target>/receptor.pdb`; the raw deposited
+structures used for redocking validation (`scripts/orthogonal_validation.py`,
+Task B) are in `data/pdb/`.
 
 | Target | PDB ID | Starting hit | Co-crystal ligand (box-defining) |
 | --- | --- | --- | --- |
@@ -16,12 +16,18 @@ redocking validation (`scripts/orthogonal_validation.py`, Task B) are in
 | BRAF | 3OG7 | ZM336372 | 032 |
 | VEGFR2 | 4ASD | semaxanib | BAX |
 | SRC | 3G5D | PP2 | 1N1 |
+| DDR1 | 4CKR | DDR1-IN-1 | DI1 |
+| CDK16 | 3MTL | Indirubin E804 | FEF |
 
 Each `data/targets/<target>/target.json` records the starting-hit SMILES, the
 docking box (`box_center` / `box_size`, derived from the co-crystal ligand),
-and the receptor path. These six weak/known-inhibitor starting hits define the
-hit-to-lead campaign; the co-crystal ligands are used only to define the box
-and, for Task B, to validate it.
+and the receptor path. The first six targets use weak/known-inhibitor starting
+hits for the hit-to-lead campaign, with the co-crystal ligands used only to
+define the box and, for Task B, to validate it. DDR1 and CDK16 were added
+later to extend the orthogonal-validation context to two more
+literature-sparse targets; for these two, the starting hit is the same
+compound as the deposited co-crystal ligand, and they are evaluated only in
+that orthogonal-validation context, not in the primary six-target benchmark.
 
 ## Large language model
 

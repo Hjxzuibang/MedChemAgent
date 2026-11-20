@@ -1,0 +1,20 @@
+{
+  "name": "CDK16",
+  "pdb_id": "3MTL",
+  "drug": "Indirubin E804",
+  "ligand_res": "FEF",
+  "chain": "A",
+  "hit_smiles": "OC[C@H](O)CCO/N=C1/C(Nc2ccccc12)=C3/C(=O)Nc4ccccc34",
+  "receptor_pdb": "data/targets/CDK16/receptor.pdb",
+  "box_center": [
+    -9.821,
+    -24.936,
+    15.725
+  ],
+  "box_size": [
+    16.457,
+    16.0,
+    18.012
+  ],
+  "protein_atoms": 2277
+}

@@ -1,0 +1,20 @@
+{
+  "name": "DDR1",
+  "pdb_id": "4CKR",
+  "drug": "DDR1-IN-1",
+  "ligand_res": "DI1",
+  "chain": "A",
+  "hit_smiles": "CCN1CCN(CC1)Cc2ccc(cc2C(F)(F)F)C(=O)Nc3ccc(C)c(Oc4ccc5NC(=O)Cc5c4)c3",
+  "receptor_pdb": "data/targets/DDR1/receptor.pdb",
+  "box_center": [
+    1.11,
+    33.933,
+    12.779
+  ],
+  "box_size": [
+    25.871,
+    18.841,
+    16.0
+  ],
+  "protein_atoms": 2313
+}

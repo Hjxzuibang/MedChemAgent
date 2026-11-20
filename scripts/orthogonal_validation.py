@@ -33,7 +33,7 @@ from scipy.stats import spearmanr                       # noqa: E402
 from medchem_agent import config                        # noqa: E402
 from medchem_agent.tools import docking                 # noqa: E402
 
-TARGETS = ["EGFR", "CDK2", "ABL1", "BRAF", "VEGFR2", "SRC"]
+TARGETS = ["EGFR", "CDK2", "ABL1", "BRAF", "VEGFR2", "SRC", "DDR1", "CDK16"]
 METHODS = ["agent", "random", "greedy", "llm_blind", "ga", "gated_ga"]
 BENCH_FILES = [
     "results/benchmark.json",
@@ -57,6 +57,13 @@ COCRYSTAL_SMILES = {
     "BRAF":   "CCCS(=O)(=O)Nc1ccc(F)c(C(=O)c2c[nH]c3ncc(-c4ccc(Cl)cc4)cc23)c1F",  # 032  vemurafenib
     "VEGFR2": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(C(F)(F)F)c3)cc2)ccn1",      # BAX  sorafenib
     "SRC":    "Cc1nc(Nc2ncc(C(=O)Nc3c(C)cccc3Cl)s2)cc(N2CCN(CCO)CC2)n1",        # 1N1  dasatinib
+    # DDR1/CDK16: the starting hit_smiles for these two targets IS the
+    # co-crystal ligand itself (DDR1-IN-1 / Indirubin E804), unlike the
+    # original six targets where hit and co-crystal ligand can differ in
+    # principle. SMILES below match data/targets/{DDR1,CDK16}/target.json
+    # hit_smiles, sourced from the RCSB chemical component dictionary.
+    "DDR1":   "CCN1CCN(CC1)Cc2ccc(cc2C(F)(F)F)C(=O)Nc3ccc(C)c(Oc4ccc5NC(=O)Cc5c4)c3",  # DI1  DDR1-IN-1
+    "CDK16":  "OC[C@H](O)CCO/N=C1/C(Nc2ccccc12)=C3/C(=O)Nc4ccccc34",            # FEF  Indirubin E804
 }
 
 
