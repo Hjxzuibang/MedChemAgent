@@ -8,7 +8,7 @@ llm:
   base_url: "https://api.openai.com/v1"   # any OpenAI-compatible endpoint
   api_key_env: "OPENAI_API_KEY"           # env var holding the API key
   auth_file: ""                           # optional JSON file {"OPENAI_API_KEY": "..."}
-  model: "gpt-4o"                         # chat model used for the agent loop
+  model: "gpt-5.6-luna"                   # model used in the reported agent runs
   temperature: 0.7
   max_tokens: 3000
   timeout_sec: 180

@@ -18,7 +18,7 @@ affinity alone.
 ```
 medchem_agent/            Core library (agent, scoring, Pareto front, tools)
 scripts/                  Benchmark / ablation / validation entry points
-data/targets/             Six targets: target.json + prepared receptor.pdb
+data/targets/             Eight targets: target.json + prepared receptor.pdb
 data/pdb/                 Deposited co-crystal structures (redocking validation)
 config.yaml               Runtime configuration (LLM endpoint, docking, weights)
 environment.yml           Conda environment
@@ -51,7 +51,7 @@ as `{"OPENAI_API_KEY": "..."}` referenced by `llm.auth_file`).
 # config.yaml (excerpt)
 llm:
   base_url: "https://api.openai.com/v1"   # any OpenAI-compatible endpoint
-  model: "gpt-4o"
+  model: "gpt-5.6-luna"
 ```
 
 All paths are repository-root-relative; run the scripts from the repository
@@ -82,7 +82,8 @@ python scripts/run_significance.py
 python scripts/run_ablation.py --repeats 6
 python scripts/run_ablation_significance.py
 
-# Orthogonal validation of the smina docking protocol
+# Orthogonal validation of the smina docking protocol (six primary targets,
+# plus DDR1 and CDK16 for the literature-density extension)
 python scripts/orthogonal_validation.py reproducibility   # score stability
 python scripts/orthogonal_validation.py redock            # co-crystal RMSD
 ```
@@ -91,9 +92,9 @@ python scripts/orthogonal_validation.py redock            # co-crystal RMSD
 
 The agent and every baseline share one `Scorer` (`medchem_agent/evaluate.py`),
 so any difference is attributable to the method, not to a larger budget. Four
-objectives — docking affinity, QED, synthesizability (SA), and ADMET filter
-pass-rate — are normalized to `[0, 1]` and combined into a single aggregate; the
-Pareto front over raw docking vs. drug-likeness is tracked separately
+objectives — docking affinity, QED, synthesizability (SA), and a rule-based
+developability-panel pass rate — are normalized to `[0, 1]` and combined into a
+single aggregate; the Pareto front over raw docking vs. drug-likeness is tracked separately
 (`medchem_agent/pareto.py`).
 
 ## Reproducibility note
@@ -106,7 +107,7 @@ the same `smina` seed.
 
 ## Data availability
 
-See [data_availability.md](data_availability.md) for the six PDB structures,
+See [data_availability.md](data_availability.md) for the eight PDB structures,
 the starting-hit SMILES, and the docking-box definitions.
 
 ## Citation
